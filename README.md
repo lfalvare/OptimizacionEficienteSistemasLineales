@@ -27,32 +27,53 @@ Este repositorio contiene los programas creados para el proyecto de doctorado ti
 
 ## Instalación
 
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/tuusuario/optimizacion-ecuaciones-lineales.git
-   cd optimizacion-ecuaciones-lineales
+1. **Clonar el repositorio**:</p>
+git clone https://github.com/tuusuario/optimizacion-ecuaciones-lineales.git</p>
+cd optimizacion-ecuaciones-lineales
+
+
+2. **Instalar las dependencias**:</p>
+pip install -r requirements.txt
 
 ## Uso
+
 ### Descargar y cargar matrices dispersas
-  ```bash
-  from utilidad_matrices_dispersa import UtilidadMatricesDispersas
 
-  # Definir el nombre del grupo, el nombre de la matriz y el directorio de descarga
-  nombre_grupo = 'HB'
-  nombre_matriz = 'ash331'
-  path_descarga = '/ruta/a/tu/directorio/matrices'
 
-  # Crear una instancia de la utilidad de matrices dispersas
-  utilidad = UtilidadMatricesDispersas(nombre_grupo, nombre_matriz, path_descarga)
+## Uso
 
-  # Descargar y cargar la matriz
-  utilidad.descargar_matriz()
-  matriz = utilidad.cargar_matriz()
+### Descargar y cargar matrices dispersas
 
-  # Visualizar la estructura de la matriz
-  if matriz is not None:
-      utilidad.visualizar_estructura_matriz()
+```python
+from utilidad_matrices_dispersa import UtilidadMatricesDispersas
 
+# Definir el nombre del grupo, el nombre de la matriz y el directorio de descarga
+nombre_grupo = 'HB'
+nombre_matriz = 'ash331'
+path_descarga = '/ruta/a/tu/directorio/matrices'
+
+# Crear una instancia de la utilidad de matrices dispersas
+utilidad = UtilidadMatricesDispersas(nombre_grupo, nombre_matriz, path_descarga)
+
+# Descargar y cargar la matriz
+utilidad.descargar_matriz()
+matriz = utilidad.cargar_matriz()
+
+# Visualizar la estructura de la matriz
+if matriz is not None:
+ utilidad.visualizar_estructura_matriz()
+```
 ## Contribuciones
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue los siguientes pasos:
+
+1. Realiza un fork del repositorio.
+2. Crea una rama para tu feature (git checkout -b feature/nueva-feature).
+3. Realiza un commit de tus cambios (git commit -am 'Añadir nueva feature').
+4. Haz push a la rama (git push origin feature/nueva-feature).
+5. Abre un Pull Request.
 
 ## Licencia
+Este proyecto está licenciado bajo la Licencia GNU. Ver el archivo LICENSE para más detalles.
+
+## Contacto
+Para más información, puedes contactar al autor del proyecto en lfalvare@utp.edu.co
