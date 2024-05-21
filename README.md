@@ -34,6 +34,7 @@ Este repositorio contiene los programas creados para el proyecto de doctorado ti
 
 ## Uso
 ### Descargar y cargar matrices dispersas
+  ```bash
   from utilidad_matrices_dispersa import UtilidadMatricesDispersas
 
   # Definir el nombre del grupo, el nombre de la matriz y el directorio de descarga
